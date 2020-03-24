@@ -16,3 +16,8 @@ result[computation3]=$val3
 result[computation4]=$val4
 
 echo "${result[@]}"
+array[0]=${result[computation1]}
+array[1]=${result[computation2]}
+array[2]=${result[computation3]}
+array[3]=${result[computation4]}
+
