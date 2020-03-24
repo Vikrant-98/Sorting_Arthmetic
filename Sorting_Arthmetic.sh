@@ -36,3 +36,18 @@ do
 
 done
 echo "${array[@]}"
+for (( index1=0; index1<3; index1++ ))
+do
+        for (( index=0; index<$((3-$index1)); index++ ))
+        do
+                if (( ${array[index]} > ${array[index+1]} ))
+                then
+                        temp=${array[index]}
+                        array[index]=${array[index+1]}
+                        array[index+1]=$temp
+                fi
+        done
+
+done
+echo "${array[@]}"
+
