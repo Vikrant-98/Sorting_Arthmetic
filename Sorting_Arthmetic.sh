@@ -7,3 +7,4 @@ read -p "Enter value of inetger" c
 val1=$(($a+$b*$c))
 val2=$(($a*$b+$c))
 val3=$(($c+$b/$a))
+val4=$(($a%$b+$c))
